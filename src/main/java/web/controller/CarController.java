@@ -23,7 +23,7 @@ public class CarController {
     public String printWelcome(Model model) {
 
         model.addAttribute("cars", carService.listCars());
-        return "index";
+        return "cars";
     }
 
 }
