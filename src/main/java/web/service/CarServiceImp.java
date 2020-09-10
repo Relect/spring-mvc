@@ -1,5 +1,6 @@
 package web.service;
 
+import org.springframework.stereotype.Service;
 import web.model.Car;
 import web.model.Color;
 
@@ -7,6 +8,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+@Service
 public class CarServiceImp implements CarService {
     private List<Car> cars = new ArrayList<>(Arrays.asList(
        new Car("Mersedes-Benz", "A001AA", Color.BLACK),
